@@ -14,15 +14,16 @@
   <body>
     <aside>
       <div>
-        <i class="fa-solid fa-bong"></i>
+        <div class="img5">
+          <img src="img/cannabis-drug.svg" alt="" />
+        </div>
         <h1>Cannabis Store</h1>
       </div>
       <div><i class="fa-solid fa-bars"></i></div>
       <menu>
-        <p>inicio</p>
-        <p>catalogo</p>
-        <p>ofertas</p>
-        <p>contacto</p>
+        <a class="catalogo" href="#catalogo">catalogo</a>
+        <a class="siganviendo" href="#siganviendo">sigan viendo</a>
+        <a class="contacto" href="#contacto">contacto</a>
       </menu>
     </aside>
     <section class="seccion">
@@ -32,7 +33,7 @@
         <option value="valor">Valor</option>
       </select>
     </section>
-    <main>
+    <main id="catalogo">
       <div class="cartas">
         <div class="carta">
           <img src="img/logo thc.png" alt="Producto" />
@@ -65,15 +66,15 @@
           <button>Cotiza Aqui</button>
         </div>
       </div>
-      <div class="npag">
-        <a href="#">&laquo;</a>
+      <div class="npag" id="siganviendo">
+        <a href="#" class="activa">&laquo;</a>
         <a href="#" class="activo">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">&raquo;</a>
+        <a href="#" class="activa">2</a>
+        <a href="#" class="activa">3</a>
+        <a href="#" class="activa">&raquo;</a>
       </div>
     </main>
-    <footer>
+    <footer id="contacto">
       <div class="iconos">
         <i class="fa-brands fa-tiktok"></i>
         <i class="fa-brands fa-instagram"></i>

@@ -18,6 +18,12 @@ aside {
   align-items: center;
   color: white;
 }
+div .img5 {
+  padding-top: 2rem;
+  width: 4rem;
+  display: flex;
+  transition: 0.8s ease;
+}
 .logo img {
   width: 10%;
   height: 10%;
@@ -112,7 +118,7 @@ img {
   color: green;
   border-radius: 5px;
 }
-.fa-bong {
+div.img5 {
   animation: desplasar 2s;
 }
 @keyframes desplasar {
@@ -140,6 +146,9 @@ img {
   background-color: yellowgreen;
   color: green;
 }
+.npag a.activa {
+  background-color: rgb(108, 179, 108);
+}
 @media (min-width: 576px) {
   body {
     grid-template-columns: 20% 80%;
@@ -166,8 +175,9 @@ img {
     padding: 1rem;
     margin-top: 2px;
   }
-  menu p {
+  a {
     line-height: 2rem;
+    color: white;
   }
   i {
     font-size: 1.5rem;
@@ -242,6 +252,14 @@ img {
     filter: grayscale(100%);
     transition: 0.8s ease;
   }
+  div .img5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+
   .carta2:hover img {
     filter: grayscale(0%);
     transition: 0.8s ease;
