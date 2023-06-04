@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "aside" "seccion" "main" "footer";
+  grid-template-rows: 6% 8% auto 6%;
+}
+
+aside {
+  grid-area: aside;
+  background-color: green;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.logo img {
+  width: 10%;
+  height: 10%;
+  border-radius: 80%;
+}
+menu {
+  display: none;
+}
+i {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+h1 {
+  font-size: 1rem;
+}
+.seccion {
+  grid-area: seccion;
+  background-color: green;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+select {
+  width: 80%;
+  border-radius: 5px;
+  padding: 5px 0;
+  border: grey solid 1px;
+  background-color: rgb(250, 250, 2);
+}
+label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+main {
+  grid-area: main;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer {
+  background-color: green;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+.carta2 {
+  display: none;
+}
+div.carta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+  margin: 10px, 0;
+  height: 25rem;
+}
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 25rem;
+  width: 80%;
+  filter: grayscale(100%);
+  transition: 0.8s ease;
+}
+.carta:hover img {
+  filter: grayscale(0%);
+  transition: 0.8s ease;
+}
+.carta:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease;
+}
+
+.carta p {
+  display: flex;
+  justify-content: center;
+}
+.carta button {
+  background-color: yellowgreen;
+  border: none;
+  height: 2rem;
+  color: green;
+  border-radius: 5px;
+}
+.fa-bong {
+  animation: desplasar 2s;
+}
+@keyframes desplasar {
+  0% {
+    transform: translatex(35px);
+  }
+}
+.npag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+  margin-top: 1rem;
+}
+
+.npag a {
+  float: left;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px 1rem;
+  margin-top: 1px;
+  margin: 0 2px;
+}
+.npag a.activo {
+  background-color: yellowgreen;
+  color: green;
+}
+@media (min-width: 576px) {
+  body {
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "aside seccion" "aside main" "footer main";
+    grid-template-rows: 6% auto 8%;
+  }
+  aside {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+  .fa-bars {
+    display: none;
+  }
+  .fa-cannabis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2px;
+  }
+  menu p {
+    line-height: 2rem;
+  }
+  i {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  section {
+    padding: 20 80px;
+  }
+  select {
+    width: 100%;
+  }
+  .texfotter {
+    font-size: 1rem;
+    text-align: center;
+    justify-content: space-around;
+  }
+  .cartas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .carta {
+    border: 1px solid black;
+    width: 27%;
+    margin: 10px 0;
+  }
+  .carta img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 25rem;
+    width: 100%;
+  }
+  .carta2 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 25rem;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  .carta2 p {
+    display: flex;
+    justify-content: center;
+  }
+  .carta2 button {
+    background-color: yellowgreen;
+    border: none;
+    height: 2rem;
+    color: green;
+    border-radius: 5px;
+  }
+  .carta2 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 25rem;
+    width: 100%;
+  }
+  img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 25rem;
+    width: 80%;
+    filter: grayscale(100%);
+    transition: 0.8s ease;
+  }
+  .carta2:hover img {
+    filter: grayscale(0%);
+    transition: 0.8s ease;
+  }
+  .carta2:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease;
+  }
+  .npag {
+    padding-top: 5rem;
+    width: 100%;
+    height: 100%;
+  }
+  footer {
+    padding-bottom: 2rem;
+  }
+}
